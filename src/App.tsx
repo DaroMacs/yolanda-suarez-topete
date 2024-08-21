@@ -5,7 +5,9 @@ import viteLogo from "/vite.svg";
 function App() {
   return (
     <>
-      <h1 className="line">Yolanda Suárez</h1>
+      <h1 className="line">DIFRACCIÓN-PRODUCCIÓN</h1>
+      <h1 className="line2">“De lo personal a lo digital”</h1>
+      <h1 className="line3">- Yolanda Suárez Topete -</h1>
 
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
@@ -26,9 +28,6 @@ function App() {
         </a>
       </div>
       <div className="card">
-        {/* <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button> */}
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
