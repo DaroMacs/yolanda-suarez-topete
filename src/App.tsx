@@ -1,4 +1,6 @@
 import "./App.css";
+import poster1 from "./assets/1.png";
+import poster2 from "./assets/2.png";
 
 function App() {
   return (
@@ -26,8 +28,8 @@ function App() {
         <a href="https://react.dev" target="_blank">
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a> */}
-        {/* <img src={poster1} className="logo" alt="Vite logo" />
-        <img src={poster2} className="logo" alt="Vite logo" /> */}
+        <img src={poster1} className="logo" alt="Vite logo" />
+        <img src={poster2} className="logo" alt="Vite logo" />
       </div>
       <footer>footer</footer>
     </>
