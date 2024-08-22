@@ -1,13 +1,13 @@
 import "./App.css";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 
 function App() {
   return (
     <>
-      <h1 className="line">DIFRACCIÓN-PRODUCCIÓN</h1>
-      <h1 className="line2">“De lo personal a lo digital”</h1>
-      <h1 className="line3">- Yolanda Suárez Topete -</h1>
+      <div className="head">
+        <h1 className="line lineGen">DIFRACCIÓN-PRODUCCIÓN</h1>
+        <h1 className="line2 lineGen">“De lo personal a lo digital”</h1>
+        <h1 className="line3 lineGen">-Yolanda Suárez Topete-</h1>
+      </div>
 
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
@@ -19,22 +19,17 @@ function App() {
         dicta, voluptatum reiciendis!
       </p>
 
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
+      <div className="content">
+        {/* <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
         <a href="https://react.dev" target="_blank">
           <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        </a> */}
+        {/* <img src={poster1} className="logo" alt="Vite logo" />
+        <img src={poster2} className="logo" alt="Vite logo" /> */}
       </div>
-      <div className="card">
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <footer>footer</footer>
     </>
   );
 }
