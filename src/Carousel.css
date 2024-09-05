@@ -1,0 +1,27 @@
+.image-slider-container {
+  margin: 0 auto;
+  width: 500px;
+  vertical-align: top;
+}
+
+.image-slider-container .slick-prev:before,
+.image-slider-container .slick-next:before {
+  color: black;
+}
+
+.slide {
+  /* outline: 1px solid blue; */
+  height: 575px;
+  margin: auto;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+img {
+  border-radius: 0.625rem;
+  margin: auto;
+  width: 25rem;
+  align-self: center !important;
+  /* height: 100%; */
+}

@@ -1,17 +1,24 @@
 import "./App.css";
-import poster1 from "./assets/1.png";
-import poster2 from "./assets/2.png";
+import SimpleSlider from "./Carousel";
+//  import poster3 from "./assets/3.webp";
+//  import poster4 from "./assets/4.webp";
+// import poster5 from "./assets/5.webp";
+//  import poster6 from "./assets/6.webp";
+//   import poster7 from "./assets/7.webp";
+//   import poster8 from "./assets/8.webp";
+//   import poster9 from "./assets/9.webp";
+//   import poster10 from "./assets/10.webp";
 
 function App() {
   return (
     <>
       <div className="head">
-        <h1 className="line lineGen">DIFRACCIÓN-PRODUCCIÓN</h1>
-        <h1 className="line2 lineGen">“De lo personal a lo digital”</h1>
-        <h1 className="line3 lineGen">-Yolanda Suárez Topete-</h1>
+        <h1 className="line">DIFRACCIÓN-PRODUCCIÓN</h1>
+        <h1 className="line2">“De lo personal a lo digital”</h1>
+        <h1 className="line3">-Yolanda Suárez Topete-</h1>
       </div>
 
-      <p>
+      {/* <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
         perferendis aliquid maiores voluptas officia officiis, odit vero fugit
         repellat esse accusamus. Quasi non maxime ducimus qui fuga architecto,
@@ -19,19 +26,16 @@ function App() {
         odit. Fugit et molestias quibusdam dolore fugiat, minima animi numquam
         quia culpa laboriosam nihil porro, deserunt quae labore error sequi
         dicta, voluptatum reiciendis!
-      </p>
+      </p> */}
 
-      <div className="content">
-        {/* <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a> */}
-        <img src={poster1} className="logo" alt="Vite logo" />
-        <img src={poster2} className="logo" alt="Vite logo" />
+      <div className="media">
+        {/* <div className="text">text</div> */}
+        {/* <img src={poster1} alt="poster1" />
+        <img src={poster2} alt="poster2" /> */}
+        <SimpleSlider />
       </div>
-      <footer>footer</footer>
+
+      <div className="contact">Contacto: @Yola</div>
     </>
   );
 }
