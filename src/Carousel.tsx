@@ -91,6 +91,16 @@ export default function SimpleSlider() {
     afterChange: afterChange,
     centerMode: true,
     centerPadding: "70px",
+
+    responsive: [
+      {
+        breakpoint: 480,
+        settings: {
+          centerMode: false,
+          centerPadding: "0px",
+        },
+      },
+    ],
   };
 
   return (
@@ -105,7 +115,7 @@ export default function SimpleSlider() {
       <div className="slide-counter">
         <p>{slide}/10</p>
         <button className="download-button" onClick={handleDownload}>
-          Descargar
+          Descargar/Ampliar
         </button>
         <p className="text">{imageText[slide - 1].text}</p>
       </div>
