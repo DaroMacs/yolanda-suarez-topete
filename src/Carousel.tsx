@@ -57,6 +57,19 @@ const imageText = [
   },
 ];
 
+const posters = [
+  poster1,
+  poster2,
+  poster3,
+  poster4,
+  poster5,
+  poster6,
+  poster7,
+  poster8,
+  poster9,
+  poster10,
+];
+
 export default function SimpleSlider() {
   const [slide, setSlide] = useState(1);
 
@@ -64,7 +77,10 @@ export default function SimpleSlider() {
     setSlide(i + 1);
   };
 
-  console.log(slide);
+  const handleDownload = () => {
+    const imageUrl = posters[slide - 1];
+    window.open(imageUrl, "_blank");
+  };
 
   const settings = {
     dots: true,
@@ -76,42 +92,21 @@ export default function SimpleSlider() {
     centerMode: true,
     centerPadding: "70px",
   };
+
   return (
     <div className="image-slider-container">
       <Slider {...settings}>
-        <div className="slide">
-          <img src={poster1} alt="poster1" />
-        </div>
-        <div className="slide">
-          <img src={poster2} alt="poster2" />
-        </div>
-        <div className="slide">
-          <img src={poster3} alt="poster3" />
-        </div>
-        <div className="slide">
-          <img src={poster4} alt="poster4" />
-        </div>
-        <div className="slide">
-          <img src={poster5} alt="poster5" />
-        </div>
-        <div className="slide">
-          <img src={poster6} alt="poster6" />
-        </div>
-        <div className="slide">
-          <img src={poster7} alt="poster7" />
-        </div>
-        <div className="slide">
-          <img src={poster8} alt="poster8" />
-        </div>
-        <div className="slide">
-          <img src={poster9} alt="poster9" />
-        </div>
-        <div className="slide">
-          <img src={poster10} alt="poster10" />
-        </div>
+        {posters.map((poster, index) => (
+          <div key={index} className="slide">
+            <img src={poster} alt={`poster${index + 1}`} />
+          </div>
+        ))}
       </Slider>
       <div className="slide-counter">
         <p>{slide}/10</p>
+        <button className="download-button" onClick={handleDownload}>
+          Descargar
+        </button>
         <p className="text">{imageText[slide - 1].text}</p>
       </div>
     </div>

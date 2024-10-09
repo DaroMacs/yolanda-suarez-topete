@@ -35,7 +35,7 @@ function App() {
         <SimpleSlider />
       </div>
 
-      <div className="contact">Contacto: @Yola</div>
+      <div className="contact">Contacto: @yolandasuat</div>
     </>
   );
 }
