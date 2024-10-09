@@ -65,9 +65,7 @@ p {
 }
 
 .contact {
-  position: fixed;
   width: 100%;
-  bottom: 5px;
 
   a {
     text-decoration: underline;
@@ -80,6 +78,6 @@ p {
   }
 
   .contact {
-    bottom: 0;
+    padding-bottom: 16px;
   }
 }
