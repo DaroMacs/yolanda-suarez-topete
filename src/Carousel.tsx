@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "./Carousel.css";
 import poster1 from "./assets/1.webp";
 import poster10 from "./assets/10.webp";
+import poster11 from "./assets/11.webp";
 import poster2 from "./assets/2.webp";
 import poster3 from "./assets/3.webp";
 import poster4 from "./assets/4.webp";
@@ -55,6 +56,10 @@ const imageText = [
     id: 10,
     text: "Lorem 10 ipsum dolor sit amet consectetur adipisicing elit. Maxime temporibus nam assumenda, perferendis eum eos sequi aliquid vero ratione. Nulla asperiores autem alias tenetur eaque saepe qui quae, consequatur consectetur!",
   },
+  {
+    id: 11,
+    text: "Lorem 11 ipsum dolor sit amet consectetur adipisicing elit. Maxime temporibus nam assumenda, perferendis eum eos sequi aliquid vero ratione. Nulla asperiores autem alias tenetur eaque saepe qui quae, consequatur consectetur!",
+  },
 ];
 
 const posters = [
@@ -68,6 +73,7 @@ const posters = [
   poster8,
   poster9,
   poster10,
+  poster11,
 ];
 
 export default function SimpleSlider() {
@@ -117,7 +123,9 @@ export default function SimpleSlider() {
         ))}
       </Slider>
       <div className="slide-counter">
-        <p>{slide}/10</p>
+        <p>
+          {slide}/{posters.length}
+        </p>
         <button className="download-button" onClick={handleDownload}>
           Descargar/Ampliar
         </button>
