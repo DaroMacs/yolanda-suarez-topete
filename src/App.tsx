@@ -6,11 +6,9 @@ function App() {
     <>
       <div className="head">
         <h1 className="line">DIFRACCIÓN-PRODUCCIÓN</h1>
-
         <h1 className="line2">“De lo personal a lo digital”</h1>
         <h1 className="line3">-Yolanda Suárez Topete-</h1>
       </div>
-      <h1 className="line3 line4">-Yolanda Suárez Topete-</h1>
 
       <div className="media">
         <SimpleSlider />

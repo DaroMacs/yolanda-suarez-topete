@@ -37,10 +37,6 @@
   margin: 0;
 }
 
-.line4 {
-  display: none;
-}
-
 p {
   margin: 1rem;
   font-size: 12px;
@@ -61,6 +57,7 @@ p {
   align-items: center;
   width: 30%;
   height: 100%;
+  /* outline: 1px solid blue; */
 }
 
 .contact {
@@ -72,43 +69,22 @@ p {
 }
 
 @media (max-width: 768px) {
+  .head {
+    padding: 0.5rem;
+  }
+
   .media {
     padding-top: 0;
   }
 
   .contact {
     padding-bottom: 16px;
-  }
-
-  .line3 {
-    display: none;
-  }
-
-  .line4 {
-    display: block;
-    padding: 0.5rem 0;
   }
 }
 
 @media (max-width: 480px) {
   .head {
-    padding: 8px 0;
-  }
-
-  .media {
-    padding-top: 0;
-  }
-
-  .contact {
-    padding-bottom: 16px;
-  }
-
-  .line3 {
-    display: none;
-  }
-
-  .line4 {
-    display: block;
-    padding: 0.5rem 0;
+    flex-direction: column;
+    gap: 0.5rem;
   }
 }
