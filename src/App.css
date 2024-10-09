@@ -67,8 +67,11 @@ p {
 .contact {
   position: fixed;
   width: 100%;
-  bottom: 16px;
-  left: 16px;
+  bottom: 5px;
+
+  a {
+    text-decoration: underline;
+  }
 }
 
 @media (max-width: 768px) {

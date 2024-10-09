@@ -35,7 +35,11 @@ function App() {
         <SimpleSlider />
       </div>
 
-      <div className="contact">Contacto: @yolandasuat</div>
+      <div className="contact">
+        Yolanda Suárez Topete
+        <br />
+        <a href="https://www.instagram.com/yolandasuat/">@yolandasuat</a>
+      </div>
     </>
   );
 }

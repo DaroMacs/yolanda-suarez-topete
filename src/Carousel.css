@@ -45,6 +45,14 @@ img {
   font-size: 12px;
 }
 
+.contact {
+  padding-top: 1rem;
+  width: 100%;
+  font-size: 12px;
+  text-align: center;
+  margin: 0;
+}
+
 @media (max-width: 480px) {
   .image-slider-container {
     width: 350px;
