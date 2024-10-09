@@ -108,7 +108,11 @@ export default function SimpleSlider() {
       <Slider {...settings}>
         {posters.map((poster, index) => (
           <div key={index} className="slide">
-            <img src={poster} alt={`poster${index + 1}`} />
+            <img
+              src={poster}
+              alt={`poster${index + 1}`}
+              onClick={handleDownload}
+            />
           </div>
         ))}
       </Slider>

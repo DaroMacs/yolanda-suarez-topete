@@ -23,6 +23,7 @@ img {
   margin: auto;
   width: 25rem;
   align-self: center !important;
+  cursor: pointer;
 }
 
 .slide-counter {
