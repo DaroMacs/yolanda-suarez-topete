@@ -78,6 +78,8 @@ const posters = [
 
 export default function SimpleSlider() {
   const [slide, setSlide] = useState(1);
+  const [modalOpen, setModalOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState("");
 
   const afterChange = (i: number) => {
     setSlide(i + 1);
@@ -86,6 +88,15 @@ export default function SimpleSlider() {
   const handleDownload = () => {
     const imageUrl = posters[slide - 1];
     window.open(imageUrl, "_blank");
+  };
+
+  const openModal = (imageUrl: string) => {
+    setSelectedImage(imageUrl);
+    setModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalOpen(false);
   };
 
   const settings = {
@@ -97,13 +108,11 @@ export default function SimpleSlider() {
     afterChange: afterChange,
     centerMode: true,
     centerPadding: "70px",
-
     responsive: [
       {
         breakpoint: 480,
         settings: {
           centerMode: false,
-          centerPadding: "0px",
         },
       },
     ],
@@ -117,7 +126,7 @@ export default function SimpleSlider() {
             <img
               src={poster}
               alt={`poster${index + 1}`}
-              onClick={handleDownload}
+              onClick={() => openModal(poster)}
             />
           </div>
         ))}
@@ -127,10 +136,21 @@ export default function SimpleSlider() {
           {slide}/{posters.length}
         </p>
         <button className="download-button" onClick={handleDownload}>
-          Descargar/Ampliar
+          Descargar
         </button>
         <p className="text">{imageText[slide - 1].text}</p>
       </div>
+
+      {modalOpen && (
+        <div className="modal" onClick={closeModal}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <span className="close" onClick={closeModal}>
+              &times;
+            </span>
+            <img src={selectedImage} alt="Full size" className="modal-image" />
+          </div>
+        </div>
+      )}
     </div>
   );
 }
