@@ -46,13 +46,13 @@ p {
 .media {
   border-top: 1px solid #000;
   /* outline: 1px solid red; */
-  height: 100vh;
-  max-height: 100vh;
+  /* height: 100vh;
+  max-height: 100vh; */
   display: flex;
   justify-content: center;
   align-items: flex-start;
   padding: 1rem 0;
-  padding-top: 64px;
+  padding-top: 14px;
 }
 
 .text {
@@ -69,4 +69,10 @@ p {
   width: 100%;
   bottom: 16px;
   left: 16px;
+}
+
+@media (max-width: 768px) {
+  .media {
+    padding-top: 0;
+  }
 }

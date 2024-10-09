@@ -1,6 +1,6 @@
 .image-slider-container {
   margin: 0 auto;
-  width: 500px;
+  width: 600px;
   vertical-align: top;
 }
 
@@ -11,11 +11,11 @@
 
 .slide {
   /* outline: 1px solid blue; */
-  height: 575px;
   margin: auto;
   display: flex !important;
   justify-content: center !important;
   align-items: center !important;
+  height: 575px;
 }
 
 img {
@@ -23,5 +23,33 @@ img {
   margin: auto;
   width: 25rem;
   align-self: center !important;
-  /* height: 100%; */
+}
+
+.slide-counter {
+  padding-top: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.text {
+  width: 100%;
+}
+
+@media (max-width: 480px) {
+  .slide {
+    height: 500px;
+  }
+
+  img {
+    width: 350px;
+  }
+
+  .text {
+    width: 350px;
+  }
 }
