@@ -20,7 +20,7 @@ function App() {
       </div>
 
       <div className="contact">
-        Yolanda Suárez Topete
+        <b>Yolanda Suárez Topete</b>
         <br />
         <a href="https://www.instagram.com/yolandasuat/">@yolandasuat</a>
       </div>

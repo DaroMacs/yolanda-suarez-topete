@@ -44,6 +44,12 @@ img {
 
 .text {
   width: 100%;
+
+  span {
+    font-style: italic;
+    font-weight: 600;
+    text-decoration: underline;
+  }
 }
 
 .download-button {

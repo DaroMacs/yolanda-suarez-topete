@@ -20,7 +20,7 @@ import poster9 from "./assets/9.png";
 const imageText = [
   {
     id: 1,
-    text: "Todas somos parte de la historia contemporánea y dignas herederas de las feministas que nos precedieron en la lucha. Si bien cada una de nosotras aporta reflexiones y acciones desde su propia trinchera, no todas compartimos las mismas experiencias, ni nos hemos formado bajo las mismas circunstancias. Sin embargo, todas nos vemos afectadas por la estructura patriarcal sobre la que se basa la sociedad. En el marco de mi maestría en Estudios Visuales, esta serie de carteles digitales surge como una contribución a los activismos feministas, fusionando mi interpretación personal de los feminismos, desde la perspectiva de una mujer que recientemente ha integrado este movimiento a su identidad. Inspirada en los conceptos de contravisualidad y difracción, propuestos por Nicholas Mirzoeff y Donna Haraway, que se desarrollan en cada pieza. <br /> <br /> Con este proyecto, busco facilitar el acceso a información significativa y alentar a mujeres, especialmente aquellas con poca o ninguna experiencia en el feminismo, a adentrarse al movimiento y descubrir el poder de convocatoria de los medios digitales. Mi objetivo es motivarlas a expresar sus vivencias sin temor al juicio externo o a la errónea idea de que ya todo ha sido dicho. Toda práctica adquiere relevancia cuando ofrece una nueva visión y una interpretación distinta de la realidad, fundamentada desde la singularidad de quien la realiza.",
+    text: `Todas somos parte de la historia contemporánea y dignas herederas de las feministas que nos precedieron en la lucha. Si bien cada una de nosotras aporta reflexiones y acciones desde su propia trinchera, no todas compartimos las mismas experiencias, ni nos hemos formado bajo las mismas circunstancias. Sin embargo, todas nos vemos afectadas por la estructura patriarcal sobre la que se basa la sociedad. En el marco de mi maestría en Estudios Visuales, esta serie de carteles digitales surge como una contribución a los activismos feministas, fusionando mi interpretación personal de los feminismos, desde la perspectiva de una mujer que recientemente ha integrado este movimiento a su identidad. Inspirada en los conceptos de <span>contravisualidad</span> y <span>difracción</span>, propuestos por Nicholas Mirzoeff y Donna Haraway, que se desarrollan en cada pieza. <br /> <br /> Con este proyecto, busco facilitar el acceso a información significativa y alentar a mujeres, especialmente aquellas con poca o ninguna experiencia en el feminismo, a adentrarse al movimiento y descubrir el poder de convocatoria de los medios digitales. Mi objetivo es motivarlas a expresar sus vivencias sin temor al juicio externo o a la errónea idea de que ya todo ha sido dicho. Toda práctica adquiere relevancia cuando ofrece una nueva visión y una interpretación distinta de la realidad, fundamentada desde la singularidad de quien la realiza.`,
     title: "Introducción",
   },
   {
@@ -157,7 +157,7 @@ export default function SimpleSlider() {
         <button className="download-button" onClick={handleDownload}>
           Descargar
         </button>
-        <p>{imageText[slide - 1].title} </p>
+        <b className="title">{imageText[slide - 1].title} </b>
         <p className="text">{Parser(imageText[slide - 1].text)}</p>
       </div>
 
