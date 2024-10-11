@@ -5,9 +5,14 @@ function App() {
   return (
     <>
       <div className="head">
-        <h1 className="line">DIFRACCIÓN-PRODUCCIÓN</h1>
-        <h1 className="line2">“De lo personal a lo digital”</h1>
-        <h1 className="line3">-Yolanda Suárez Topete-</h1>
+        <h1 className="line">
+          EXPOSICIÓN VIRTUAL:
+          <br />
+          <span className="line3">
+            Una práctica de contravisualidad y difracción
+          </span>
+        </h1>
+        {/* <h1 className="line3">-Yolanda Suárez Topete-</h1> */}
       </div>
 
       <div className="media">

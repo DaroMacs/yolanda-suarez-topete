@@ -1,6 +1,6 @@
 .head {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 0.75rem;
 }
@@ -51,17 +51,11 @@ p {
   padding-top: 14px;
 }
 
-.text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 30%;
-  height: 100%;
-  /* outline: 1px solid blue; */
-}
-
 .contact {
   width: 100%;
+  font-size: 12px;
+  text-align: center;
+  padding-bottom: 1rem;
 
   a {
     text-decoration: underline;
@@ -86,5 +80,19 @@ p {
   .head {
     flex-direction: column;
     gap: 0.5rem;
+  }
+
+  .line3 {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 390px) {
+  .line {
+    font-size: 0.875rem;
+  }
+
+  .line3 {
+    font-size: 0.75rem;
   }
 }
